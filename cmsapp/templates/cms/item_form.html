@@ -1,0 +1,6 @@
+<h2>{{ form.instance.id|yesno:"Edit,Create" }} Item</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">{{ form.instance.id|yesno:"Update,Create" }}</button>
+</form>

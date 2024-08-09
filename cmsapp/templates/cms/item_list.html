@@ -1,6 +1,6 @@
-<h2>Search Results</h2>
+<h2>Items</h2>
 <ul>
-    {% for item in results %}
+    {% for item in items %}
     <li><a href="{% url 'item_detail' item.id %}">{{ item.title }}</a></li>
     {% endfor %}
 </ul>
